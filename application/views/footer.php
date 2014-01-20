@@ -8,16 +8,16 @@
         <div class="large-4 columns social">
             <p>Socialize with us!</p>
             <ul class="inline-list">
-                <li><a class="twitter" href="www.twitter.com/hoatzinest"></a></li>
+                <li><a class="twitter" href="http://www.twitter.com/hoatzinest"></a></li>
                 <li><a class="facebook" href="#"></a></li>
-                <li><a class="mail" href="#"></a></li>
+                <li><a class="mail" href="<?php echo base_url();?>contact"></a></li>
             </ul>
         </div>
         <div class="large-2 columns">
             <ul>
                 <span>About</span>
                 <li><a href="#">History</a></li>
-                <li><a href="#">Contact</a></li>
+                <li><a href="<?php echo base_url();?>contact">Contact</a></li>
                 <li><a href="#">Terms of use</a></li>
             </ul>
         </div>
@@ -25,8 +25,8 @@
             <ul>
                 <span>Community</span>
                 <li><a href="#">Members</a></li>
-                <li><a href="#">Projects</a></li>
-                <li><a href="#">Showcase</a></li>
+                <li><a href="<?php echo base_url();?>projects">Projects</a></li>
+                <li><a href="<?php echo base_url();?>showcase">Showcase</a></li>
                 <li><a href="#">Resources</a></li>
             </ul>
         </div>
