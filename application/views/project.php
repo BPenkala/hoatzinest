@@ -51,7 +51,6 @@
         <!-- Team Members panel-->
         <div class="large-4 columns widget">
             <div class="row collapse top-margin">
-<<<<<<< HEAD
                 <div class="large-4 columns"></div>
                 <div class="large-8 column bottom-spacer">
 					<?php
@@ -64,17 +63,8 @@
 					<?php
 					}
 					?>
-||||||| merged common ancestors
                 <div class="large-4 columns"></div>
                 <div class="large-8 column bottom-spacer">
-					
-			<?php $link = base_url()."project/join/".$project['project_id']; ?>
-                    <a href="<?php echo $link; ?>" class="button primary radius extrawide"><h5>Join this Team</h5></a>
-=======
-                <div class="large-8 column bottom-spacer right">			
-			<?php $link = base_url()."project/join/".$project['project_id']; ?>
-                    <a href="<?php echo $link; ?>" class="button primary radius extrawide"><h5>Join this Team</h5></a>
->>>>>>> 2b295e02c8b02811fd1b60cbb38c22689a7ca056
                 </div>
             </div>
             <div class="row collapse">
