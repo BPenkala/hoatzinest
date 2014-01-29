@@ -157,6 +157,8 @@
         <div class="large-1 columns"></div>
     </div>
     <?php echo form_close(); ?>
+ 
+    <br/><br/>
 
 </section>
 

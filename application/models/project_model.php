@@ -81,19 +81,7 @@
 			// Insert into Team DB
 			$this->db->insert('team_members', $data);
 			
-		}	
-		
-		public function is_team_members($team_id,$email){
-		   $this->db->select('*');
-		   $this->db->from('team_members');
-		   $this->db->join('users', 'users.id = team_members.user_id');
-		   $this->db->where("users.email",$email);
-		   $res = $this->db->get();
-		   if($res->num_rows()>0)
-		      return true;
-		   else
-		     return false;   
-		}	
+		}		
 		
         
         

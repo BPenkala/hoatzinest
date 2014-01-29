@@ -264,8 +264,8 @@ header{
 .bottom-spacer{
     margin-bottom: 15px;
 }
-+.about{
-+    padding-bottom: 10px;
+.about p{
+    padding-top: 10px;
 }
 
 /********** Side Widgets **********/
