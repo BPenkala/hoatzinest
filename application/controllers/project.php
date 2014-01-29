@@ -7,12 +7,15 @@ class Project extends CI_Controller {
 		if ($this->session->userdata('is_logged_in') != TRUE){ redirect('login'); }
 	}
 
-	public function index()
+	public function index($team_id)
 	{
+			$email = $this->session->userdata('email');
+			$data["team"] = $this->project_model->get_team_members($team_id);
+			$joined["is_joined_user"] = $this->project_model->is_team_members($team_id, $email);
 			
 			$data['title'] = 'Project | HoatziNest';
 			$this->load->view('header', $data);
-			$this->load->view('about');
+			$this->load->view('project', $joined);
 			$this->load->view('footer');
 
 	}
