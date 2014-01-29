@@ -67,9 +67,16 @@
             <div class="row collapse top-margin">
                 <div class="large-4 columns"></div>
                 <div class="large-8 column bottom-spacer">
-					
-			<?php $link = base_url()."project/join/".$project['project_id']; ?>
-                    <a href="<?php echo $link; ?>" class="button primary radius extrawide"><h5>Join this Team</h5></a>
+					<?php
+					if(! $is_joined_user)
+					{
+						$link = base_url()."project/join/".$project['project_id'];
+					?>
+
+					<a href="<?php echo $link; ?>" class="button primary radius extrawide"><h5>Join this Team</h5></a>
+					<?php
+					}
+					?>
                 </div>
             </div>
             <div class="row collapse">
